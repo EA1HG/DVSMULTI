@@ -30,7 +30,7 @@ DVSMU es un menu que permite agregar usuarios adicionales a nuestro server DVSWI
 
 # Cómo instalar:
 
-    sudo wget https://github.com/hp3icc/dvsmu/raw/main/setup
+    sudo wget https://raw.githubusercontent.com/EA1HG/DVSMULTI/main/setup
     
     sudo chmod +x setup
     
