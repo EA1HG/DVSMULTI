@@ -3,7 +3,7 @@
 ###############################################################################
 #
 #  Excution Scripts for DVSM.MACRO
-#  Copyright (c) 2020 HL5KY
+#  Copyright (c) 2023 EA1HG
 #
 #  THE SOFTWARE IS PROVIDED "AS IS" AND IN NO EVENT SHALL HL5KY BE LIABLE FOR
 #  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
