@@ -42,7 +42,7 @@ DVSMU es un menu que permite agregar usuarios adicionales a nuestro server DVSWI
 
 * Se pueden agregar hasta 40 usuarios adicionales. Según el hardware y las circunstancias: 3B (10 personas) 3B+ (15 personas) 4B (20-40 personas) 
 
-* Utilice DVSMU bajo su propio responsabilidad , toda la informacion compartida es con caracter de experimentacion , cual quier informacion adicional sobre el proyecto DVSMU favor contactar a sus desarrolladores 
+* Utilice DVSMULTI bajo su propio responsabilidad , toda la informacion compartida es con caracter de experimentacion , cual quier informacion adicional sobre el proyecto DVSMULTI favor contactar a sus desarrolladores 
 
 # Fuente
 
