@@ -1,11 +1,11 @@
-#!/bin/bash
+1HG#!/bin/bash
 
 source /var/lib/dvswitch/dvs/var.txt
 
 #===================================
 SCRIPT_VERSION="2.01"
 SCRIPT_AUTHOR="HL5KY"
-SCRIPT_DATE="2022-03-18"
+SCRIPT_DATE="2023-06-28"
 #===================================
 
 if [ "$1" != "" ]; then
@@ -2243,7 +2243,7 @@ if [ "$show_TA" = yes ];
 then
 
 sel=$(whiptail --title " DVSwitch Multi User " --menu "\
-                 dvsMU v.$SCRIPT_VERSION by HL5KY
+                 dvsMU v.$SCRIPT_VERSION by EA1HG
 \n
 " 31 60 23 \
 "A" "system management" \
@@ -2298,7 +2298,7 @@ if [ $? != 0 ]; then exit 0; fi
 else
 
 sel=$(whiptail --title " DVSwitch Multi User " --menu "\
-            dvsMU v.$SCRIPT_VERSION by HL5KY 
+            dvsMU v.$SCRIPT_VERSION by EA1HG 
 \n
 " 31 50 23 \
 "A" "system management" \
