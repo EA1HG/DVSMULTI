@@ -2,8 +2,7 @@
 
 DVSMU es un menu que permite agregar usuarios adicionales a nuestro server DVSWITCH, convirtiendolo en multiusuario.
 
-#
-![alt text](https://raw.githubusercontent.com/hp3icc/DVSMU/main/E8D1FC07-6509-4170-B0E9-92488983AE89.jpeg)
+
 
 # Característica:
 
