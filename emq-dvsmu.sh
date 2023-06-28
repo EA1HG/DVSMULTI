@@ -1,7 +1,7 @@
 cat > /bin/menu-dvs <<- "EOF"
 #!/bin/bash
 while : ; do
-choix=$(whiptail --title "Raspbian Proyect HP3ICC Menu DVSwitch" --menu "Nota : Debe encender Dvswitch antes de editar para utilizar." 20 60 11 \
+choix=$(whiptail --title "Proyect EA1HG Menu DVSwitch Multi" --menu "Nota : Debe encender Dvswitch antes de editar para utilizar." 20 60 11 \
 1 " Encender Dvswitch " \
 2 " Apagar Dvswitch " \
 3 " Editar Dvswitch Server " \
