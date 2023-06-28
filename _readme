@@ -1,0 +1,64 @@
+▶ How to add dvsMU to DVSwitch image (Even after installing using setup.sh, the result is the same.)
+Download and run config.sh.
+순서
+sudo wget -O config.sh https://raw.githubusercontent.com/hp3icc/DVSMU/main/config.sh
+sudo chmod +x config.sh
+./config.sh
+
+#=====================================================================================
+▶ dvsMU를 설치하는 방법은 2가지가 있다.
+    1. setup.sh를 직접 실행하는 방법.
+        sudo wget -O setup.sh https://raw.githubusercontent.com/hp3icc/DVSMU/main/setup.sh
+        sudo chmod +x setup.sh
+        ./setup.sh
+    2. github/hl5ky/setup(binary file)by running, setup.sh how to make it run. (github/hl5ky/dvsmu has an explanation in)
+    
+#=====================================================================================
+▶ dvsMU를 사용하기 위해서 일부 파일은 DVSwitch와 달리 아래와 같이 수정해야 함.
+   (github의 파일들은 수정되어 있고, setup을 실행하면 수정된 파일이 적용됨)
+
+▶adv_dmr.txt (user00KR 의 내용도 수정)
+*bm,.    Brandmeister
+*dmrplus,.    DMRPlus
+*tgif,.    TGIF
+*other1,.    QRM
+*mainmenu,---- MAIN MENU ----
+
+▶adv_tgref.txt (user00KR edit the contents of)
+*push_tg_ref,Download(DBupdate+Favorite)
+*managetg,Add/Del TG/Ref
+*mainmenu,---- MAIN MENU ----
+
+▶adv_tools.txt (user00KR edit the contents of)
+*44,44 Drop Dynamic TGs
+*temp,Check Temp.
+*ver,DVSwitch Version?
+*88,88 Restart DVSwitch Services(2sec)
+*mainmenu,---- MAIN MENU ----
+
+▶dvsm.macro
+DVSWITCH=/opt/userUSER_NO/dvswitch.sh correction
+
+▶dvsm.sh
+source /var/lib/dvswitch/dvs/varUSER_NO.txt
+
+{tgdb} -> {tgdb_user} change
+
+#  RESTART change the contents of
+if [ "$1" = "restart" ]; then
+        sudo systemctl restart mmdvm_bridgeUSER_NO
+        sudo systemctl restart analog_bridgeUSER_NO
+        sudo systemctl restart md380-emuUSER_NO
+
+#  Change MODE  Change the content of all mods
+elif [ "$1" = "dstar" ]; then
+#        if [ ${mode_now} = "DSTAR" ]; then
+        ${MESSAGE} " only DMR is available "
+#        sudo systemctl restart ircddbgatewayd
+#        else
+#        sudo systemctl restart ircddbgatewayd
+#       sleep 12
+#        ${MODESET} DSTAR
+#        ${DVSWITCH} tlvAudio AUDIO_USE_GAIN ${txgain_dstar}
+#        fi
+#=====================================================================================

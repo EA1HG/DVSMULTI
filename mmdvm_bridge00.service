@@ -1,0 +1,22 @@
+[Unit]
+Description=MMDVM_Bridge Service userUSER_NO
+# Description=Place this file in /lib/systemd/system
+# Description=N4IRS 10/16/2020
+
+
+[Service]
+User=root
+Type=simple
+Restart=always
+RestartSec=3
+StandardOutput=null
+WorkingDirectory=/opt/userUSER_NO
+ExecStartPre=/bin/sh -c 'until ping -c1 noip.com; do sleep 1; done;'
+ExecStart=/opt/userUSER_NO/MMDVM_Bridge /opt/userUSER_NO/MMDVM_Bridge.ini
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+
